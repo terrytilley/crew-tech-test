@@ -15,6 +15,7 @@ export default class App extends Component {
 
     this.state = pageContent;
   }
+
   render() {
     return(
       <div>
@@ -35,6 +36,10 @@ export default class App extends Component {
         <ProductGrid
           heading={this.state.blocks[3].heading}
           items={this.state.blocks[3].items} />
+
+        <Heading
+          heading={this.state.blocks[4].heading}
+          subheading={this.state.blocks[4].subheading} />
       </div>
     );
   }
