@@ -1,0 +1,70 @@
+.wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper,
+.row {
+  @extend %clearfix;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+[class*='column-'] {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media (min-width: 768px) {
+    float: left;
+  }
+}
+
+@media (min-width: $breakpoint-small) {
+  .wrapper {
+    width: 750px;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .column-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .wrapper {
+    width: 970px;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .column-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .wrapper {
+    width: 1170px;
+  }
+
+  @for $i from 1 through $grid-columns {
+    .column-#{$i} {
+      width: 100% / $grid-columns * $i;
+    }
+  }
+}

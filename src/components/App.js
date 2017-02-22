@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import pageContent from '../data/page-content.json';
+import '../assets/scss/styles.scss';
 
 export default class App extends Component {
   constructor(props) {
