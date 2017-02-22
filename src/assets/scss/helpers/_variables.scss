@@ -8,6 +8,8 @@ $breakpoint-large: 1200px;
 
 // Colors
 $white: #ffffff;
+$black: #333333;
+$grey:  lighten($black, 10%);
 
 // Font Family
-$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family: Verdana, Geneva, sans-serif;
