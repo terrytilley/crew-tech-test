@@ -1,0 +1,29 @@
+.product-grid {
+  margin-bottom: 5em;
+
+  h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 2.5em;
+  }
+
+  .item {
+    a {
+      color: $black;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover, &:active, &:focus {
+        text-decoration: underline;
+      }
+
+      img {
+        margin-bottom: .5em;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
