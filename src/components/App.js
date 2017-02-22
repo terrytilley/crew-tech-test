@@ -18,7 +18,10 @@ export default class App extends Component {
       <div>
         <PageHeader />
         <Youtube videoId={this.state.blocks[0].videoId} />
-        <Heading />
+        <Heading 
+          heading={this.state.blocks[1].heading}
+          subheading={this.state.blocks[1].subheading}
+          />
       </div>
     );
   }
