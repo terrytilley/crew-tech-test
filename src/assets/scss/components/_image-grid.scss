@@ -1,0 +1,23 @@
+.image-grid {
+  text-align: center;
+
+  .item {
+    img {
+      margin-bottom: .5em;
+    }
+
+    p {
+      font-size: .8em;
+      line-height: 1.5;
+      text-align: left;
+    }
+  }
+
+  a.cta {
+    color: $primary-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 5em 0;
+  }
+}

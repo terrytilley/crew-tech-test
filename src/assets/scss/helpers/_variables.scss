@@ -7,9 +7,10 @@ $breakpoint-medium: 992px;
 $breakpoint-large: 1200px;
 
 // Colors
-$white: #ffffff;
-$black: #333333;
-$grey:  lighten($black, 10%);
+$primary-color: #0160a0;
+$white:         #ffffff;
+$black:         #333333;
+$grey:          lighten($black, 10%);
 
 // Font Family
 $font-family: Verdana, Geneva, sans-serif;

@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 
 export default class Youtube extends Component {
   render() {
-    const youtubeURL = "https://www.youtube.com/watch?v=" + this.props.videoId;
+    const youtubeVideoURL = "https://www.youtube.com/watch?v=" + this.props.videoId;
+    const youtubeImageURL = "src/assets/images/" + this.props.image;
+
     return(
       <div className="wrapper youtube">
-        <img src="src/assets/images/youtube/poster.jpg" alt="YouTube" />
+        <img src={youtubeImageURL} alt="YouTube" />
 
-        <a href={youtubeURL} className="play-button">
+        <a href={youtubeVideoURL} className="play-button">
           <img src="src/assets/images/buttons/play-button.svg" alt="YouTube" />
         </a>
       </div>
