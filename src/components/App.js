@@ -5,6 +5,7 @@ import Youtube from './Youtube';
 import Heading from './Heading';
 import ImageGrid from './ImageGrid';
 import ProductGrid from './ProductGrid';
+import Carousel from './Carousel';
 
 import pageContent from '../data/page-content.json';
 import '../assets/scss/styles.scss';
@@ -40,6 +41,9 @@ export default class App extends Component {
         <Heading
           heading={this.state.blocks[4].heading}
           subheading={this.state.blocks[4].subheading} />
+
+        <Carousel
+          slides={this.state.blocks[5].items} />
       </div>
     );
   }

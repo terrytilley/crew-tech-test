@@ -1,0 +1,123 @@
+.carousel {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: solid 1px $border-color;
+  border-bottom: solid 1px $border-color;
+
+  .slick-slider {
+    .slick-arrow {
+      width: 50px;
+      height: 50px;
+      z-index: 2;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+
+      &:before {
+        content: "";
+      }
+    }
+
+    .slick-prev {
+      top: 50%;
+      left: 0;
+      background: url(/src/assets/images/icons/arrow-left.svg) no-repeat center center;
+      background-color: $primary-color;
+      background-size: 31px 37px;
+    }
+
+    .slick-next {
+      top: 40%;
+      right: -15px;
+      background: url(/src/assets/images/icons/arrow-left.svg) no-repeat center center;
+      background-color: $primary-color;
+      background-size: 31px 37px;
+      transform: rotate(180deg);
+    }
+
+    .slick-slide {
+      .images, .tip {
+        width: 50%;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .images {
+        position: relative;
+
+        img {
+          -webkit-transition: opacity 1s ease-in-out;
+          -moz-transition: opacity 1s ease-in-out;
+          -o-transition: opacity 1s ease-in-out;
+          transition: opacity 1s ease-in-out;
+
+        }
+
+        img.top {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          animation-name: imageFadeInOut;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          animation-duration: 5s;
+          animation-direction: alternate;
+        }
+      }
+
+      .tip {
+        h3 {
+          font-size: 3em;
+        }
+
+        h4 {
+          color: $primary-color;
+          font-size: 2em;
+          text-transform: none;
+          margin-top: .2em;
+          margin-bottom: .5em;
+        }
+
+        p {
+          color: $grey;
+          font-size: 1.5em;
+          line-height: 1.3em;
+        }
+      }
+    }
+  }
+}
+
+.social-icons {
+  position: relative;
+  text-align: center;
+
+  img {
+    margin-top: -25px;
+    border-radius: 100%;
+    background-color: black;
+
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
+}
+
+@keyframes imageFadeInOut {
+  0% {
+    opacity:1;
+  }
+  45% {
+    opacity:1;
+  }
+  55% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
