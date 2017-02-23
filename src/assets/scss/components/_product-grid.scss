@@ -8,9 +8,17 @@
   }
 
   .item {
+    text-align: center;
+
+    @media (min-width: 450px) and (max-width: 767px) {
+      width: 50%;
+      float: left;
+    }
+
     a {
       color: $black;
-      font-weight: 700;
+      font-weight: 400;
+      text-transform: uppercase;
       text-decoration: none;
 
       &:hover, &:active, &:focus {
