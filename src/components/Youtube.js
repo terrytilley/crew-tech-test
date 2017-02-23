@@ -6,7 +6,7 @@ export default class Youtube extends Component {
     const youtubeImageURL = "src/assets/images/" + this.props.image;
 
     return(
-      <div className="wrapper youtube">
+      <div className="wrapper wide youtube">
         <img src={youtubeImageURL} alt="YouTube" />
 
         <a href={youtubeVideoURL} className="play-button">
