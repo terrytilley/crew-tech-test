@@ -6,7 +6,7 @@ export default class CarouselSlide extends Component {
     const image2 = "src/assets/images/" + this.props.images[1];
 
     return(
-      <div>
+      <div className="content">
         <div className="images">
           <img className="bottom" src={image2} alt="Sleep Tip" />
           <img className="top" src={image1} alt="Sleep Tip" />
@@ -15,7 +15,7 @@ export default class CarouselSlide extends Component {
         <div className="tip">
           <h3>{this.props.heading}</h3>
           <h4>IKEA Sleep Coach says:</h4>
-          <p>"{this.props.text}"</p>
+          <p>&#8220;{this.props.text}&#8221;</p>
         </div>
       </div>
     );
